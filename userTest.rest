@@ -1,0 +1,35 @@
+### get all user 
+GET http://localhost:5008/api/user/getalluser
+
+
+
+### user Register
+
+POST http://localhost:5008/api/user/register
+Content-Type: application/json
+
+{
+  "firstName": "ali",
+  "lastName": "haouas",
+  "email": "moh.haouas@gmail.com",
+  "password": "123456",
+  "confirmPassword": "123456"
+}
+
+### verify-account
+GET  http://localhost:3005/api/user/verify_account/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJraGFsaWwiLCJsYXN0TmFtZSI6Imhhb3VhcyIsImVtYWlsIjoia2hhbGlsLmhhb3Vhc0BnbWFpbC5jb20iLCJpYXQiOjE3MDk1OTAxNzYsImV4cCI6MTcwOTU5MDIzNn0.LJ87ytdK3kjr-Lz5czK231ciaw22xyFcjT3bqP456ns
+
+
+
+
+### user login
+POST http://localhost:3005/api/user/login
+Content-Type: application/json
+
+{
+  "email": "khalil.haouas@gmail.com",
+  "password": "123456"
+}
+
+### user logout
+POST http://localhost:3005/api/user/logout
